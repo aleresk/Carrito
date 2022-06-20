@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/*ESTA ES LA PARTE QUE AGREGO YO PARA MI PROYECTO*/
+.container{
+  display: flex;
+  background-color: aqua;
+}
+
+.logo{
+  width: 30%;
+  text-align: left;
+  color: brown;
+}
+
+nav{
+  padding-top: 10px;
+  background-color:cadetblue;
+  width: 70%;
+}
+
+ul{
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+li{
+  display: inline;
+  padding-top: 32px;
+  padding-bottom: 20px;
+  padding-left: 90px;
+  padding-right: 90px;
+  color: white;
+  font-weight: bold;    
+}
+.cartLogo{
+  width: 80%;
+}
+
+.listaProd {
+  font-size: 54px;
+  color: blue;
+}
+
+.cartWidget{
+  width: 5%;
+}
+/*ESTA ES LA PARTE QUE AGREGO YO PARA MI PROYECTO*/

@@ -1,20 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-
+import NavBar from './components/NavBar';
+import Lista from './components/ItemListContainer';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-        <p>
-          Hello World!
-        </p> 
-       <p>
-       Esta es una nueva app para el curso de React.Js con Guille
-       </p>
-
-       </header>
+        <NavBar/>
+                
+      </header>
+       
+       <section>
+          <Lista/>
+       </section>
     </div>
   );
 }
