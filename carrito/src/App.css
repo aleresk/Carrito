@@ -85,4 +85,7 @@ li{
 .cartWidget{
   width: 30%;
 }
+.carro{
+  display: flex;
+}
 /*ESTA ES LA PARTE QUE AGREGO YO PARA MI PROYECTO*/
