@@ -73,7 +73,8 @@ li{
   font-weight: bold;    
 }
 .cartLogo{
-  width: 80%;
+  width: 20%;
+  display:inline-block
 }
 
 .listaProd {
@@ -82,6 +83,6 @@ li{
 }
 
 .cartWidget{
-  width: 5%;
+  width: 30%;
 }
 /*ESTA ES LA PARTE QUE AGREGO YO PARA MI PROYECTO*/

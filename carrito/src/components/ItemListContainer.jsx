@@ -1,7 +1,7 @@
 
 
-const Lista = () => {
-    return (<p className="listaProd">Este es el listado de mis productos</p>);
+const Lista = ({greeting}) => {
+    return (<p className="listaProd">{greeting}</p>);
 }
 
 export default Lista;

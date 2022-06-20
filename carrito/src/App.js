@@ -6,12 +6,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar/>
-                
+        <Lista greeting ="Este es el listado de mis productos"/>
       </header>
        
-       <section>
-          <Lista/>
-       </section>
     </div>
   );
 }
