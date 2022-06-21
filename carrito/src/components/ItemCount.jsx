@@ -13,12 +13,13 @@ const ItemCount = ({Stock, Initial, onAdd}) => {
 
     const aumentarStock = () => {
             
-            setAuxStock(auxStock + 1);
+        auxStock < Stock ? setAuxStock(auxStock + 1) : setAuxStock(auxStock)
     }
 
     const disminuirStock = () => {
-            setAuxStock(auxStock - 1);
+        auxStock >= Initial ? setAuxStock(auxStock - 1) : setAuxStock(auxStock)  
     }
+
     return(
         <div>
             <div className="cantProd">
