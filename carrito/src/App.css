@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,5 +89,6 @@ li{
 }
 .cantProd{
   display: flex;
+  align-content: center;
 }
 /*ESTA ES LA PARTE QUE AGREGO YO PARA MI PROYECTO*/
