@@ -46,7 +46,8 @@
 }
 
 .logo{
-  width: 30%;
+  font-size: 15px;
+  width: 50%;
   text-align: left;
   color: brown;
 }
@@ -72,6 +73,13 @@ li{
   color: white;
   font-weight: bold;    
 }
+li:hover{
+  background-color: #910e0e;
+}
+a{
+  text-decoration: none;
+}
+
 .cartLogo{
   width: 60px;
 }
@@ -89,6 +97,6 @@ li{
 }
 .cantProd{
   display: flex;
-  align-content: center;
+  justify-content: center;
 }
 /*ESTA ES LA PARTE QUE AGREGO YO PARA MI PROYECTO*/
