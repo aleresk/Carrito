@@ -95,8 +95,19 @@ a{
 .carro{
   display: flex;
 }
+.contCarrito{
+  width: 150px;
+  margin: auto;
+  background-color: aqua;
+}
 .cantProd{
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
+}
+.botonAgregarCarrito{
+  width: 150px;
+}
+.botonSuma{
+  width: 30px;
 }
 /*ESTA ES LA PARTE QUE AGREGO YO PARA MI PROYECTO*/
