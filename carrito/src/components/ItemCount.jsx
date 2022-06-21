@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useState } from "react";
 
 const ItemCount = ({Stock, Initial, onAdd}) => {
@@ -5,7 +6,13 @@ const ItemCount = ({Stock, Initial, onAdd}) => {
     const [auxStock, setAuxStock] = useState(Stock);
     const [auxIntial, setAuxInitial] =useState(Initial);
 
+    useEffect(() => {
+        setAuxStock(auxIntial);
+    },[])
+    
+
     const aumentarStock = () => {
+            
             setAuxStock(auxStock + 1);
     }
 
