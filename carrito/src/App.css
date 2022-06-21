@@ -87,4 +87,7 @@ li{
 .carro{
   display: flex;
 }
+.cantProd{
+  display: flex;
+}
 /*ESTA ES LA PARTE QUE AGREGO YO PARA MI PROYECTO*/

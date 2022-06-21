@@ -2,15 +2,19 @@ import { useState } from "react";
 
 const ItemCount = ({Stock, Initial, onAdd}) => {
     
-    const [auxStock, setauxStock] = useState(Stock);
-    const [auxIntial, setauxInitial] =useState(Initial);
+    const [auxStock, setAuxStock] = useState(Stock);
+    const [auxIntial, setAuxInitial] =useState(Initial);
 
-    
+    const aumentarStock = () => {
+            setAuxStock(auxStock + 1);
+    }
+
+    const disminuirStock = () => {
+            setAuxStock(auxStock - 1);
+    }
     return(
-        <div>
-            <p>El stock es: {Stock}</p>
-            <p>El initial es: {Initial}</p>
-            {onAdd()}
+        <div className="cantProd">
+            <div ><button onClick={() => disminuirStock()}> - </button></div> <div>{auxStock}</div><div ><button onClick={() => aumentarStock()}> + </button></div>
         </div>
     )
 }
