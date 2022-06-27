@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,19 +37,23 @@
   }
 }
 
+
+
+/*ESTA ES LA PARTE QUE AGREGO YO PARA MI PROYECTO*/
 .container{
   display: flex;
   background-color: aqua;
 }
 
 .logo{
-  width: 30%;
+  font-size: 15px;
+  width: 50%;
   text-align: left;
   color: brown;
 }
 
 nav{
-  padding-top: 20px;
+  padding-top: 10px;
   background-color:cadetblue;
   width: 70%;
 }
@@ -63,9 +67,47 @@ ul{
 li{
   display: inline;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 20px;
   padding-left: 90px;
   padding-right: 90px;
   color: white;
   font-weight: bold;    
 }
+li:hover{
+  background-color: #910e0e;
+}
+a{
+  text-decoration: none;
+}
+
+.cartLogo{
+  width: 60px;
+}
+
+.listaProd {
+  font-size: 54px;
+  color: blue;
+}
+
+.cartWidget{
+  width: 30%;
+}
+.carro{
+  display: flex;
+}
+.contCarrito{
+  width: 150px;
+  margin: auto;
+  background-color: aqua;
+}
+.cantProd{
+  display: flex;
+  justify-content:space-between;
+}
+.botonAgregarCarrito{
+  width: 150px;
+}
+.botonSuma{
+  width: 30px;
+}
+/*ESTA ES LA PARTE QUE AGREGO YO PARA MI PROYECTO*/

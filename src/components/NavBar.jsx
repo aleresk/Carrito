@@ -1,4 +1,4 @@
-import "./../App";
+import CartWidget from "./CartWidget";
 const NavBar = () => {
     return(
         <>
@@ -9,11 +9,16 @@ const NavBar = () => {
 
         <nav>
         <ul>
-            <li>Laptops</li>
-            <li>Desktops</li>
-            <li>Tablets</li>
+            <li><a href="#">Laptops</a></li>
+            <li><a href="#">Desktops</a></li>
+            <li><a href="#">Tablets</a></li>
         </ul>
+        
+    
         </nav>
+        <div className="cartWidget">
+            <CartWidget cant={11}/>            
+        </div>
         </div></>
     )
 }

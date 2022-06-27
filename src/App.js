@@ -1,22 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
-
+import Lista from './components/ItemListContainer';
+import ItemCount from './components/ItemCount';
+import ItemListContainer from './components/ItemListContainer';
 function App() {
+  const onAdd = () => {
+    return alert("Presionaste el botón Agregar al Carrito")
+  }
+  
   return (
     <div className="App">
       <header className="App-header">
         <NavBar/>
-        <img src={logo} className="App-logo" alt="logo" />
         
-        <p>
-          Hello World!
-        </p> 
-       <p>
-       Esta es una nueva app para el curso de React.Js con Guille
-       </p>
-
-       </header>
+      </header>
+      
+      <ItemListContainer/>
+      <ItemCount Stock={5} Initial={1} onAdd={onAdd}/>
+      
     </div>
   );
 }
