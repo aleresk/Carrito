@@ -1,5 +1,5 @@
 const Item = ({prod}) => {
-    return <div>id {prod.id} nombre: {prod.name} precio: {prod.price} <img src={prod.url} alt={prod.name} title={prod.name}/> Stock Disponible: {prod.stock}</div>
+    return <div className="prodCard"><div>{prod.name}</div> <div><img src={prod.url} className="imgCard"alt={prod.name} title={prod.name}/></div><div>Precio: ${prod.price}</div><div>Stock Disponible: {prod.stock}</div></div>
 }
 
 export default Item;

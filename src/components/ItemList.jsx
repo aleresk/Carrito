@@ -2,6 +2,6 @@ import Item from "./Item";
 
 const ItemList = ({arrayProd}) => {
     
-    return <div>{arrayProd.map((productos) => (<Item prod={productos}/>))}</div>
+    return <div className="prodCardContainer">{arrayProd.map((productos) => (<Item prod={productos}/>))}</div>
 }
 export default ItemList;

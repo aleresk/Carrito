@@ -21,6 +21,6 @@ const [Productos, setProductos] = useState([]);
         })
 
     },[])
-    return <div>{Productos && <ItemList arrayProd={Productos}/>}</div>
+    return <div >{Productos && <ItemList arrayProd={Productos}/>}</div>
 }
 export default ProductList;
