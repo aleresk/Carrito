@@ -1,0 +1,36 @@
+[
+    {
+        "id": "1",
+        "nombre": "Tablet",
+        "marca": "Samsung",
+        "precio": 2300,
+        "stock": 14,
+        "url": "media/img/tablet.webp"
+
+    },
+    {
+        "id": "2",
+        "nombre": "Desktop",
+        "marca": "HP",
+        "precio": 2700,
+        "stock": 11,
+        "url": "media/img/hp.webp"
+        
+    },
+    {
+        "id": "3",
+        "nombre": "Laptop",
+        "marca": "Lenovo",
+        "precio": 3400,
+        "stock": 43,
+        "url": "media/img/lenovo.webp"
+    },
+    {
+        "id": "4",
+        "nombre": "Smartphone",
+        "marca": "Samsung",
+        "precio": 5400,
+        "stock": 13,
+        "url": "media/img/smartphone.png"
+    }
+]

@@ -1,8 +1,8 @@
 import './App.css';
 import NavBar from './components/NavBar';
-import Lista from './components/ItemListContainer';
 import ItemCount from './components/ItemCount';
 import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
 function App() {
   const onAdd = () => {
     return alert("Presionaste el botón Agregar al Carrito")
@@ -17,7 +17,7 @@ function App() {
       
       <ItemListContainer/>
       <ItemCount Stock={5} Initial={1} onAdd={onAdd}/>
-      
+      <ItemDetailContainer/>
     </div>
   );
 }
