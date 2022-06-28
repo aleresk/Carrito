@@ -110,4 +110,15 @@ a{
 .botonSuma{
   width: 30px;
 }
+.prodCardContainer{
+  display: flex;
+}
+.prodCard{
+  margin:20px;
+  background-color: cornflowerblue;
+  font-size: 15px;
+}
+.imgCard{
+  width: 100px;
+}
 /*ESTA ES LA PARTE QUE AGREGO YO PARA MI PROYECTO*/

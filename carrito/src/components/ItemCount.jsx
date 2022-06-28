@@ -15,12 +15,12 @@ const ItemCount = ({Stock, Initial, onAdd}) => {
     //FUNCION PARA INCREMENTAR EL STOCK, CONDICIONADO POR EL MAXIMO STOCK CON OPERADORES TERNARIOS
     const aumentarStock = () => {
             
-        auxStock < Stock ? setAuxStock(auxStock + 1) : setAuxStock(auxStock)
+        auxStock < Stock && setAuxStock(auxStock + 1)
     }
 
     //FUNCION PARA RESTAR EL STOCK, CONDICIONADO POR EL INITIAL STOCK CON OPERADORES TERNARIOS
     const disminuirStock = () => {
-        auxStock >= Initial ? setAuxStock(auxStock - 1) : setAuxStock(auxStock)  
+        auxStock > Initial && setAuxStock(auxStock - 1)  
     }
 
     return(
