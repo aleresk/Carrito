@@ -4,7 +4,7 @@ import { useEffect } from "react"
 
 const ItemDetailContainer = () => {
 
-    const [prod, setProd] = useState({});
+    const [prod, setProd] = useState();
     useEffect(() => {
         fetch("resources/products.json")
         .then((response) => response.json())
@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
         })
     },[]);
 
-    return <ItemDetail prod={prod}/>
+    return prod && <ItemDetail prod={prod}/>
 }
 
 export default ItemDetailContainer;
