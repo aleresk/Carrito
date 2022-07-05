@@ -19,10 +19,11 @@ function App() {
       
         <Routes>
           <Route path="/" element={<ItemListContainer/>}/>
-          <ItemCount Stock={5} Initial={1} onAdd={onAdd}/>
-          <ItemDetailContainer/>
+          
         </Routes>
       </BrowserRouter>
+      <ItemCount Stock={5} Initial={1} onAdd={onAdd}/>
+          <ItemDetailContainer/>
     </div>
   );
 }
