@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import ItemCount from './components/ItemCount';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 function App() {
   const onAdd = () => {
     return alert("Presionaste el botón Agregar al Carrito")
@@ -10,14 +11,18 @@ function App() {
   
   return (
     <div className="App">
+      <BrowserRouter>
       <header className="App-header">
         <NavBar/>
         
       </header>
       
-      <ItemListContainer/>
-      <ItemCount Stock={5} Initial={1} onAdd={onAdd}/>
-      <ItemDetailContainer/>
+        <Routes>
+          <Route path="/" element={<ItemListContainer/>}/>
+          <ItemCount Stock={5} Initial={1} onAdd={onAdd}/>
+          <ItemDetailContainer/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
