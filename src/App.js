@@ -4,6 +4,10 @@ import ItemCount from './components/ItemCount';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { createContext } from 'react';
+
+export const cartContext = createContext(null);
+
 function App() {
  
   
