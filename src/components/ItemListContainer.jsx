@@ -1,26 +1,42 @@
+//@ts-check
 import ItemList from "./ItemList";
 import { useState } from "react"
 import { useEffect } from "react"
+import { collection, getDocs, query, getFirestore, where } from "firebase/firestore";
+import { useParams } from "react-router-dom";
 
-const ProductList = () => {
-
-const [Productos, setProductos] = useState([]);
+const ItemListContainer = () => {
+    const [Productos, setProductos] = useState([]);
+    let {idCategory} = useParams();
+    console.log(idCategory);
+    
     useEffect(() => {
-        let listaProductos = new Promise((resolve, reject) => {
-            setTimeout(()=>{
-                resolve([{id: 1, name: "Laptop Lenovo", price: 2000, url:"media/img/lenovo.webp", stock: 9},
-                         {id: 2, name: "Desktop HP", price: 1900, url:"media/img/hp.webp", stock: 14},
-                         {id: 3, name: "Tablet Samsung", price: 2300, url:"media/img/tablet.jpg", stock: 21},
-                         {id: 4, name: "Smartphone Samsung", price: 2400, url:"media/img/smartphone.png", stock: 8}])
-            },2000);
-
-        })
         
-        listaProductos.then((resultado) => {
-                            setProductos(resultado);
-        })
+        const db = getFirestore();
+        
+        if (!idCategory){
+            const items = query(collection(db, "products"));
+            
+            getDocs(items).then((snapshot) => {
+                const auxArray = snapshot.docs.map((item) => ({ ...item.data(), id: item.id}));
+                console.log("Los productos son: " + snapshot.size);
+                console.log(auxArray);
+                setProductos(auxArray);
 
-    },[])
-    return <div >{Productos && <ItemList arrayProd={Productos}/>}</div>
+            });
+            }else{
+            const items = query(collection(db, "products"), where("nombre", "==", idCategory));
+            getDocs(items).then((snapshot) => {
+                const auxArray = snapshot.docs.map((item) => ({ ...item.data(), id: item.id}));
+                console.log("Las items son: " + snapshot.size);
+                console.log(auxArray);
+                setProductos(auxArray);
+
+            });
+        }
+        
+        
+    }, [idCategory])
+    return <div >{Productos && <ItemList arrayProd={Productos} />}</div>
 }
-export default ProductList;
+export default ItemListContainer;

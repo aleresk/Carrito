@@ -4,6 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyD0i6o4YcIvxWnFkiIZP-2zYlgk1TcfHLU",
+  authDomain: "carrito-resk.firebaseapp.com",
+  projectId: "carrito-resk",
+  storageBucket: "carrito-resk.appspot.com",
+  messagingSenderId: "259335727798",
+  appId: "1:259335727798:web:1df55eb6dae341d0fb9417"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //<React.StrictMode>

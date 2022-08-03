@@ -1,3 +1,4 @@
+//@ts-check 
 import cartLogo from './../logo_cart.png';
 const CartWidget = ({cant}) => {
     return (
