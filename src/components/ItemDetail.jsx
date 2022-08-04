@@ -1,8 +1,8 @@
 //@ts-check
 import ItemCount from "./ItemCount";
 
-const onAdd = () => {
-    return alert("Presionaste el botón Agregar al Carrito")
+const onAdd = (count) => {
+    return alert("Agregaste " + count + " elementos al carrito");
 }
 
 const ItemDetail = ({prod}) => {
