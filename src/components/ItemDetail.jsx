@@ -4,7 +4,7 @@ import ItemCount from "./ItemCount";
 const ItemDetail = ({prod}) => {
 
     const onAdd = (count) => {
-        return alert("Agregaste " + count + " " + prod.nombre);
+        return alert("Agregaste " + count + " " + prod.nombre + " al carrito");
     }
     
     return <div className="prodDetail">
