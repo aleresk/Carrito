@@ -1,17 +1,13 @@
 import './App.css';
 import NavBar from './components/NavBar';
-import ItemCount from './components/ItemCount';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import { createContext } from 'react';
 
-export const cartContext = createContext(null);
 
 function App() {
- 
-  
-  return (
+   return (
+    
     <div className="App">
       <BrowserRouter>
       <header className="App-header">
@@ -27,6 +23,7 @@ function App() {
       </BrowserRouter>
       
     </div>
+    
   );
 }
 
