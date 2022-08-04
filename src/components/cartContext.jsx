@@ -1,9 +1,8 @@
-import React from "react";
 import { createContext, useState } from "react";
 
-export const cartContext = createContext();
+export const cartContainer = createContext();
 
-export default function cartContext({children}){
+export default function CartContext({children}){
 
     const [cart, setCart] = useState([]);
 
@@ -20,7 +19,11 @@ export default function cartContext({children}){
     }
 
     const isInCart = (id) => {
-        
+
     }
+
+    return <cartContainer.Provider value={cart, setCart, addItem, removeItem, clear, isInCart}>
+        {children}
+    </cartContainer.Provider>
 
 }
