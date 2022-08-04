@@ -1,11 +1,11 @@
 //@ts-check
 import ItemCount from "./ItemCount";
 
-const onAdd = (count) => {
-    return alert("Agregaste " + count + " elementos al carrito");
-}
-
 const ItemDetail = ({prod}) => {
+
+    const onAdd = (count) => {
+        return alert("Agregaste " + count + " " + prod.nombre);
+    }
     
     return <div className="prodDetail">
                 <div>
